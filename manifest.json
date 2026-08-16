@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "matteo.terminal-font-size",
+  "name": "Terminal font size",
+  "version": "1.0.0",
+  "author": "Matteo Mangoni",
+  "description": "Per-terminal font size sliders for foot, alacritty, kitty, and ghostty",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Terminal font size",
+    "description": "Per-terminal font size sliders for foot, alacritty, kitty, and ghostty",
+    "category": "System",
+    "allowMultiple": false
+  }
+}
