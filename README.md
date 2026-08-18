@@ -10,8 +10,9 @@ size survives the global knob.
 
 - **Everything** — a 9–20 px slider that runs `omarchy display text size`.
   It scales the omarchy shell, GTK text scaling, and every unpinned terminal.
-- **One slider per terminal** (6–32 pt). A moved slider **pins** that
-  terminal. A pinned size overrides the global knob: whenever anything
+- **One slider per terminal** (8–43 px on the same apparent-size scale as
+  Display; stored as 6–32 pt in terminal configs). A moved slider **pins**
+  that terminal. A pinned size overrides the global knob: whenever anything
   rewrites the terminal's config, the widget re-asserts the pin within about
   half a second. The ✕ on a pinned row unpins it, and the terminal follows
   the default again.

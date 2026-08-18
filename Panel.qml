@@ -108,6 +108,10 @@ Panel {
     if (root.bar) root.bar.run("bash " + Util.shellQuote(root.helperPath) + " " + args)
   }
 
+  function displayPxFor(pt) {
+    return Math.round(pt * 12 / 9)
+  }
+
   function patchRow(key, pt, pinned) {
     var next = []
     for (var i = 0; i < allRows.length; i++) {
@@ -396,7 +400,7 @@ Panel {
               anchors.verticalCenter: parent.verticalCenter
               width: Style.space(48)
               horizontalAlignment: Text.AlignRight
-              text: Math.round(slider.liveValue) + " pt"
+              text: root.displayPxFor(slider.liveValue) + " px"
               color: row.modelData.pinned ? Color.accent : root.contentForeground
               opacity: row.modelData.pinned ? 1 : 0.6
               font.family: root.contentFontFamily
