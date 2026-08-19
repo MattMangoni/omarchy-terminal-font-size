@@ -4,7 +4,7 @@
 #   bash install.sh
 set -euo pipefail
 
-PLUGIN_ID="matteo.terminal-font-size"
+PLUGIN_ID="mttmng.terminal-font-size"
 PLUGIN_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/plugins/$PLUGIN_ID"
 REPO_URL="https://github.com/MattMangoni/omarchy-terminal-font-size"
 SHELL_JSON="${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/shell.json"

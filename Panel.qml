@@ -18,8 +18,8 @@ import qs.Ui
 // that holds a pin (a pin must stay reachable to be unpinned).
 Panel {
   id: root
-  moduleName: "matteo.terminal-font-size"
-  ipcTarget: "matteo.terminal-font-size"
+  moduleName: "mttmng.terminal-font-size"
+  ipcTarget: "mttmng.terminal-font-size"
   manageIpc: false
 
   property var anchorItem: null
@@ -42,7 +42,7 @@ Panel {
   property string defaultTerminal: ""
 
   // Which terminals the panel always shows, from the widget's shell.json entry:
-  //   omarchy bar set matteo.terminal-font-size terminals "default kitty"
+  //   omarchy bar set mttmng.terminal-font-size terminals "default kitty"
   // "default" stands for whatever the system default terminal is right now.
   readonly property var visibleTerminals: {
     var raw = setting("terminals", "default")

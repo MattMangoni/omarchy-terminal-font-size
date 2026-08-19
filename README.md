@@ -51,8 +51,8 @@ ships configs for.
 
 ```bash
 git clone https://github.com/MattMangoni/omarchy-terminal-font-size \
-  ~/.config/omarchy/plugins/matteo.terminal-font-size
-bash ~/.config/omarchy/plugins/matteo.terminal-font-size/install.sh
+  ~/.config/omarchy/plugins/mttmng.terminal-font-size
+bash ~/.config/omarchy/plugins/mttmng.terminal-font-size/install.sh
 ```
 
 The installer is idempotent: it registers the plugin and places the "Aa"
@@ -65,30 +65,30 @@ keyword `default` stands for the current system default terminal:
 
 ```bash
 # The default terminal only (the shipped default):
-omarchy bar set matteo.terminal-font-size terminals default
+omarchy bar set mttmng.terminal-font-size terminals default
 
 # The default terminal plus kitty, always:
-omarchy bar set matteo.terminal-font-size terminals "default kitty"
+omarchy bar set mttmng.terminal-font-size terminals "default kitty"
 
 # A fixed list, ignoring the system default:
-omarchy bar set matteo.terminal-font-size terminals "foot alacritty"
+omarchy bar set mttmng.terminal-font-size terminals "foot alacritty"
 ```
 
 Open the panel from a script or keybinding:
 
 ```bash
-omarchy-shell shell summon matteo.terminal-font-size
+omarchy-shell shell summon mttmng.terminal-font-size
 ```
 
 ## Uninstall
 
 ```bash
-rm -rf ~/.config/omarchy/plugins/matteo.terminal-font-size
+rm -rf ~/.config/omarchy/plugins/mttmng.terminal-font-size
 rm -f ~/.config/omarchy/terminal-font-size.overrides
 omarchy-shell shell rescanPlugins
 ```
 
-Optionally delete the `matteo.terminal-font-size` entry from
+Optionally delete the `mttmng.terminal-font-size` entry from
 `~/.config/omarchy/shell.json`; the bar ignores it once the plugin is gone.
 
 ## License

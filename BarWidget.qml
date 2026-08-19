@@ -15,7 +15,7 @@ import qs.Ui
 // instead of looping the watcher.
 BarWidget {
   id: root
-  moduleName: "matteo.terminal-font-size"
+  moduleName: "mttmng.terminal-font-size"
 
   readonly property string helperPath: Qt.resolvedUrl("font-size.sh").toString().replace("file://", "")
   readonly property string home: Quickshell.env("HOME")
@@ -89,7 +89,7 @@ BarWidget {
   }
 
   IpcHandler {
-    target: "matteo.terminal-font-size"
+    target: "mttmng.terminal-font-size"
 
     function open(): void { root.open() }
     function close(): void { root.close() }
